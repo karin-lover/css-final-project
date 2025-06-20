@@ -1,0 +1,55 @@
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* Navigation (Flexbox) */
+.nav {
+  display: flex;
+  gap: 1rem;
+  background-color: #eee;
+  padding: 1rem;
+}
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.nav a:hover {
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+/* Images (Box Model) */
+.styled-image {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* Grid Layout Example */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* nth-child Example */
+.gallery-container img:nth-child(even) {
+  border-radius: 20px;
+}
